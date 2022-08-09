@@ -5,15 +5,24 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ButtonModule } from 'primeng/button';
 import { AppComponent } from './app.component';
+import {
+  PrimengButtonElementModule,
+  PrimengButtonElementComponent,
+} from '../../../primeng-button-element/src/public-api';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, BrowserAnimationsModule, ButtonModule],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    PrimengButtonElementModule,
+    ButtonModule,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {
   constructor(private injector: Injector) {
-    const myCustomElement = createCustomElement(AppComponent, {
+    const myCustomElement = createCustomElement(PrimengButtonElementComponent, {
       injector: this.injector,
     });
 

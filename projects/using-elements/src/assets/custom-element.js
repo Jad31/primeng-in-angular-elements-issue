@@ -162,10 +162,10 @@
 ;"use strict";
 (self["webpackChunkelements"] = self["webpackChunkelements"] || []).push([[429],{
 
-/***/ 8087:
-/*!****************************************!*\
-  !*** ./apps/elements/src/polyfills.ts ***!
-  \****************************************/
+/***/ 8520:
+/*!********************************************!*\
+  !*** ./projects/elements/src/polyfills.ts ***!
+  \********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3036,23 +3036,23 @@ Zone.__load_patch('PromiseRejectionEvent', (global, Zone) => {
 },
 /******/ __webpack_require__ => { // webpackRuntimeModules
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ var __webpack_exports__ = (__webpack_exec__(8087));
+/******/ var __webpack_exports__ = (__webpack_exec__(8520));
 /******/ }
 ]);"use strict";
 (self["webpackChunkelements"] = self["webpackChunkelements"] || []).push([[179],{
 
-/***/ 251:
-/*!************************************************!*\
-  !*** ./apps/elements/src/app/app.component.ts ***!
-  \************************************************/
+/***/ 5911:
+/*!****************************************************!*\
+  !*** ./projects/elements/src/app/app.component.ts ***!
+  \****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppComponent": () => (/* binding */ AppComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 5000);
-/* harmony import */ var primeng_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! primeng/button */ 845);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 5000);
+/* harmony import */ var _primeng_button_element_src_lib_primeng_button_element_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../primeng-button-element/src/lib/primeng-button-element.component */ 5739);
 
 
 class AppComponent {
@@ -3061,29 +3061,31 @@ class AppComponent {
     }
 }
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(); };
-AppComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 1, vars: 0, consts: [["label", "Submit"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "p-button", 0);
-    } }, directives: [primeng_button__WEBPACK_IMPORTED_MODULE_1__.Button], styles: [""] });
+AppComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 1, vars: 0, template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "lib-primeng-button-element");
+    } }, directives: [_primeng_button_element_src_lib_primeng_button_element_component__WEBPACK_IMPORTED_MODULE_0__.PrimengButtonElementComponent], styles: [""] });
 
 
 /***/ }),
 
-/***/ 4668:
-/*!*********************************************!*\
-  !*** ./apps/elements/src/app/app.module.ts ***!
-  \*********************************************/
+/***/ 7045:
+/*!*************************************************!*\
+  !*** ./projects/elements/src/app/app.module.ts ***!
+  \*************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppModule": () => (/* binding */ AppModule)
 /* harmony export */ });
-/* harmony import */ var _angular_elements__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/elements */ 209);
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser */ 2313);
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/platform-browser/animations */ 3646);
-/* harmony import */ var primeng_button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! primeng/button */ 845);
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app.component */ 251);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 5000);
+/* harmony import */ var _angular_elements__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/elements */ 209);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/platform-browser */ 2313);
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/platform-browser/animations */ 3646);
+/* harmony import */ var primeng_button__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! primeng/button */ 845);
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app.component */ 5911);
+/* harmony import */ var _primeng_button_element_src_public_api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../primeng-button-element/src/public-api */ 6064);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 5000);
+
 
 
 
@@ -3093,24 +3095,32 @@ __webpack_require__.r(__webpack_exports__);
 class AppModule {
     constructor(injector) {
         this.injector = injector;
-        const myCustomElement = (0,_angular_elements__WEBPACK_IMPORTED_MODULE_1__.createCustomElement)(_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent, {
+        const myCustomElement = (0,_angular_elements__WEBPACK_IMPORTED_MODULE_2__.createCustomElement)(_primeng_button_element_src_public_api__WEBPACK_IMPORTED_MODULE_1__.PrimengButtonElementComponent, {
             injector: this.injector,
         });
         customElements.define('my-custom-element', myCustomElement);
     }
 }
-AppModule.ɵfac = function AppModule_Factory(t) { return new (t || AppModule)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__.Injector)); };
-AppModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent] });
-AppModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({ imports: [[_angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__.BrowserModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__.BrowserAnimationsModule, primeng_button__WEBPACK_IMPORTED_MODULE_5__.ButtonModule]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__.BrowserModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__.BrowserAnimationsModule, primeng_button__WEBPACK_IMPORTED_MODULE_5__.ButtonModule] }); })();
+AppModule.ɵfac = function AppModule_Factory(t) { return new (t || AppModule)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__.Injector)); };
+AppModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent] });
+AppModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjector"]({ imports: [[
+            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__.BrowserModule,
+            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__.BrowserAnimationsModule,
+            _primeng_button_element_src_public_api__WEBPACK_IMPORTED_MODULE_1__.PrimengButtonElementModule,
+            primeng_button__WEBPACK_IMPORTED_MODULE_6__.ButtonModule,
+        ]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__.BrowserModule,
+        _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__.BrowserAnimationsModule,
+        _primeng_button_element_src_public_api__WEBPACK_IMPORTED_MODULE_1__.PrimengButtonElementModule,
+        primeng_button__WEBPACK_IMPORTED_MODULE_6__.ButtonModule] }); })();
 
 
 /***/ }),
 
-/***/ 7405:
-/*!*******************************************************!*\
-  !*** ./apps/elements/src/environments/environment.ts ***!
-  \*******************************************************/
+/***/ 1307:
+/*!***********************************************************!*\
+  !*** ./projects/elements/src/environments/environment.ts ***!
+  \***********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3124,17 +3134,17 @@ const environment = {
 
 /***/ }),
 
-/***/ 6796:
-/*!***********************************!*\
-  !*** ./apps/elements/src/main.ts ***!
-  \***********************************/
+/***/ 168:
+/*!***************************************!*\
+  !*** ./projects/elements/src/main.ts ***!
+  \***************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser */ 2313);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 5000);
-/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app/app.module */ 4668);
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./environments/environment */ 7405);
+/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app/app.module */ 7045);
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./environments/environment */ 1307);
 
 
 
@@ -3144,6 +3154,82 @@ if (_environments_environment__WEBPACK_IMPORTED_MODULE_1__.environment.productio
 }
 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__.platformBrowser().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_0__.AppModule)
     .catch(err => console.error(err));
+
+
+/***/ }),
+
+/***/ 5739:
+/*!*************************************************************************************!*\
+  !*** ./projects/primeng-button-element/src/lib/primeng-button-element.component.ts ***!
+  \*************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "PrimengButtonElementComponent": () => (/* binding */ PrimengButtonElementComponent)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 5000);
+/* harmony import */ var primeng_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! primeng/button */ 845);
+
+
+class PrimengButtonElementComponent {
+}
+PrimengButtonElementComponent.ɵfac = function PrimengButtonElementComponent_Factory(t) { return new (t || PrimengButtonElementComponent)(); };
+PrimengButtonElementComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: PrimengButtonElementComponent, selectors: [["lib-primeng-button-element"]], decls: 1, vars: 0, consts: [["label", "Submit"]], template: function PrimengButtonElementComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "p-button", 0);
+    } }, directives: [primeng_button__WEBPACK_IMPORTED_MODULE_1__.Button], styles: [""] });
+
+
+/***/ }),
+
+/***/ 9739:
+/*!**********************************************************************************!*\
+  !*** ./projects/primeng-button-element/src/lib/primeng-button-element.module.ts ***!
+  \**********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "PrimengButtonElementModule": () => (/* binding */ PrimengButtonElementModule)
+/* harmony export */ });
+/* harmony import */ var _primeng_button_element_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./primeng-button-element.component */ 5739);
+/* harmony import */ var primeng_button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! primeng/button */ 845);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser */ 2313);
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser/animations */ 3646);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 5000);
+
+
+
+
+
+class PrimengButtonElementModule {
+}
+PrimengButtonElementModule.ɵfac = function PrimengButtonElementModule_Factory(t) { return new (t || PrimengButtonElementModule)(); };
+PrimengButtonElementModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: PrimengButtonElementModule });
+PrimengButtonElementModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ imports: [[_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__.BrowserModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__.BrowserAnimationsModule, primeng_button__WEBPACK_IMPORTED_MODULE_4__.ButtonModule]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](PrimengButtonElementModule, { declarations: [_primeng_button_element_component__WEBPACK_IMPORTED_MODULE_0__.PrimengButtonElementComponent], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__.BrowserModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__.BrowserAnimationsModule, primeng_button__WEBPACK_IMPORTED_MODULE_4__.ButtonModule], exports: [_primeng_button_element_component__WEBPACK_IMPORTED_MODULE_0__.PrimengButtonElementComponent] }); })();
+
+
+/***/ }),
+
+/***/ 6064:
+/*!***********************************************************!*\
+  !*** ./projects/primeng-button-element/src/public-api.ts ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "PrimengButtonElementComponent": () => (/* reexport safe */ _lib_primeng_button_element_component__WEBPACK_IMPORTED_MODULE_0__.PrimengButtonElementComponent),
+/* harmony export */   "PrimengButtonElementModule": () => (/* reexport safe */ _lib_primeng_button_element_module__WEBPACK_IMPORTED_MODULE_1__.PrimengButtonElementModule)
+/* harmony export */ });
+/* harmony import */ var _lib_primeng_button_element_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lib/primeng-button-element.component */ 5739);
+/* harmony import */ var _lib_primeng_button_element_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib/primeng-button-element.module */ 9739);
+/*
+ * Public API Surface of primeng-button-element
+ */
+
+
 
 
 /***/ }),
@@ -55202,6 +55288,6 @@ var zindexutils = ZIndexUtils();
 },
 /******/ __webpack_require__ => { // webpackRuntimeModules
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ var __webpack_exports__ = (__webpack_exec__(6796));
+/******/ var __webpack_exports__ = (__webpack_exec__(168));
 /******/ }
 ]);

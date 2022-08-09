@@ -16,6 +16,12 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "paths": {
+      "primeng-button-element": [
+        "dist/primeng-button-element/primeng-button-element",
+        "dist/primeng-button-element"
+      ]
+    },
     "target": "es2017",
     "module": "es2020",
     "lib": [
