@@ -56,7 +56,7 @@
                             "apps/using-elements/src/assets"
                         ],
                         "styles": ["apps/using-elements/src/styles.scss"],
-                        "scripts": []
+                        "scripts": ["apps/using-elements/src/assets/custom-element.js"]
                     },
                     "configurations": {
                         "production": {

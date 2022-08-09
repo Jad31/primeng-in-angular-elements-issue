@@ -5,6 +5,7 @@
         "ng": "ng",
         "start": "ng serve",
         "build": "ng build",
+        "elements:build": "ng build --configuration=production && cat dist/elements/runtime*.js dist/elements/polyfills*.js dist/elements/main*.js > apps/using-elements/src/assets/custom-element.js",
         "watch": "ng build --watch --configuration development",
         "test": "ng test"
     },
