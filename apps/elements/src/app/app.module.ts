@@ -13,10 +13,10 @@ import { AppComponent } from './app.component';
 })
 export class AppModule {
   constructor(private injector: Injector) {
-    const customElement = createCustomElement(AppComponent, {
+    const myCustomElement = createCustomElement(AppComponent, {
       injector: this.injector,
     });
 
-    customElements.define('custom-element', customElement);
+    customElements.define('my-custom-element', myCustomElement);
   }
 }

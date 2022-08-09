@@ -171,19 +171,25 @@
                             "budgets": [{
                                     "type": "initial",
                                     "maximumWarning": "500kb",
-                                    "maximumError": "1mb"
+                                    "maximumError": "3mb"
                                 },
                                 {
                                     "type": "anyComponentStyle",
                                     "maximumWarning": "2kb",
-                                    "maximumError": "4kb"
+                                    "maximumError": "10kb"
                                 }
                             ],
                             "fileReplacements": [{
                                 "replace": "apps/elements/src/environments/environment.ts",
                                 "with": "apps/elements/src/environments/environment.prod.ts"
                             }],
-                            "outputHashing": "all"
+                            "optimization": false,
+                            "sourceMap": false,
+                            "namedChunks": false,
+                            "buildOptimizer": false,
+                            "vendorChunk": false,
+                            "outputHashing": "all",
+                            "extractLicenses": false
                         },
                         "development": {
                             "buildOptimizer": false,
