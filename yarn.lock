@@ -190,6 +190,13 @@
   dependencies:
     tslib "^2.3.0"
 
+"@angular/elements@^13.3.0":
+  version "13.3.11"
+  resolved "https://registry.yarnpkg.com/@angular/elements/-/elements-13.3.11.tgz#d8cbebc52651e9f0bb21da1ee572ecd89ebaaa21"
+  integrity sha512-NA2WvnFNMTz/86W4f9o8fEa+wDulYVcJ3MG5XWB2L5lW6Y3r9tTRZfbsxMiT26Pl1+ClGONIeN+ZAAwlyV30Vw==
+  dependencies:
+    tslib "^2.3.0"
+
 "@angular/forms@~13.3.0":
   version "13.3.11"
   resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-13.3.11.tgz#f63aa99a2b3bd4638fb3429417b4e432ddc0f113"
@@ -5243,6 +5250,23 @@ pretty-bytes@^5.3.0:
   version "5.6.0"
   resolved "https://registry.yarnpkg.com/pretty-bytes/-/pretty-bytes-5.6.0.tgz#356256f643804773c82f64723fe78c92c62beaeb"
   integrity sha512-FFw039TmrBqFK8ma/7OL3sDz/VytdtJr044/QUJtH0wK9lb9jLq9tJyIxUwtQJHwar2BqtiA4iCWSwo9JLkzFg==
+
+primeflex@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/primeflex/-/primeflex-2.0.0.tgz#b4152a97a455bbfad33503b6e10fe73d1f9e2228"
+  integrity sha512-t6AG3iRI1rh04uI+9nC4JSlbKfA8PnpRDFtjyqi3rDSLRgdfOuhIiunJbjVQ4alnnCfuQAAbVyde1AKN9QxT/w==
+
+primeicons@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/primeicons/-/primeicons-5.0.0.tgz#73a0b6028a77c58a9eeb331ad13aaf085e8451ee"
+  integrity sha512-heygWF0X5HFI1otlZE62pp6ye7sZ8om78J9au2BRkg8O7Y8AHTZ9qKMRzchZUHLe8zUAvdi6hZzzm9XxgwIExw==
+
+primeng@^13.3.0:
+  version "13.4.1"
+  resolved "https://registry.yarnpkg.com/primeng/-/primeng-13.4.1.tgz#a5bdaf3373ac100462c8911601ae3e97c76652c7"
+  integrity sha512-Dp72Yt7ORwoVYXr5r4oNTacQHUyLAdTuvXXNg9ZNjjxCdIfYZsVjTFBHBVzgEo9BpPy+/5twYy1JP/eXXDNPHg==
+  dependencies:
+    tslib "^2.3.0"
 
 process-nextick-args@~2.0.0:
   version "2.0.1"
